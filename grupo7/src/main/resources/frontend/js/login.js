@@ -12,7 +12,10 @@ function autenticar(){
  
     $.ajax({
         type: 'GET',
-        url:"http://localhost:8080/api/user/"+$("#userEmail").val()+"/"+$("#userPassword").val(),
+	    /**
+	    *         url:"http://localhost:8080/api/user/"+$("#userEmail").val()+"/"+$("#userPassword").val(),
+	    */
+        url:"http://129.151.111.172:8080/api/user/"+$("#userEmail").val()+"/"+$("#userPassword").val(),
 	    contentType: "application/json;  charset=utf-8",
 	    dataType: 'json',
 	    /*data: JSON.stringify(objetoJS),
